@@ -465,7 +465,9 @@
             <script type="text/javascript">
               document.getElementById("button").addEventListener('click', function () {
                   var text = document.getElementById('mytext');
-                  text.value += ' after clicking';
+                  if (text.includes('2020')) {
+                    text.value += ' text includes 2020 :)';
+                  }
               });
               </script>
 
