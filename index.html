@@ -464,12 +464,14 @@
 
             <script type="text/javascript">
               document.getElementById("button").addEventListener('click', function () {
-                  var text = document.getElementById('mytext');
-                  if (text.includes('2020')) {
-                    text.value += ' text includes 2020 :)';
-                  }
+                var text = document.getElementById('mytext');
+                if (text.includes('2020')) {
+                  text.value += ' text includes 2020';
+                } else {
+                  text.value += ' text does NOT include 2020';
+                }
               });
-              </script>
+            </script>
 
           </form>
         </div>
